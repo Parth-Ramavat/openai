@@ -31,6 +31,7 @@
 						</div>
 						<div class="col-md-9">
 							<input type="text" name="lan-title" class="form-control" id="lan-title" placeholder="Enter your text" required>
+							<input type="text" name="tra-lan-title" class="form-control mt-3" id="tra-lan-title" placeholder="Translated Text" required="">
 							<div class="spinner-border spinner-border-sm text-spinner" style="display: none;"></div>
 						</div>
 					</div>
@@ -70,7 +71,7 @@
 					if( response.status ) {
 						$(".text-spinner").css("display","none");
 						$(".lan-submit"). attr("disabled", false);
-						$('#lan-title').val(response.text);
+						$('#tra-lan-title').val(response.text);
 					}	            
 		        },
 		    });
@@ -97,7 +98,7 @@
 					if( response.status ) {
 						$(".lan-submit"). attr("disabled", false);
 						$(".text-spinner").css("display","none");
-						$('#lan-title').val(response.text);
+						$('#tra-lan-title').val(response.text);
 					}	            
 		        },
 		    });
