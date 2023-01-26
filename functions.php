@@ -2,7 +2,7 @@
 
 require_once 'vendor/autoload.php'; 
 
-$api_key = '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';
+$api_key = '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';
 $client = OpenAI::client($api_key);
 
 if( $_POST['action'] == 'article' ) {
